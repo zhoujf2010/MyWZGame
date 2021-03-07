@@ -36,5 +36,48 @@ def loop():
     canvas.after(250, loop)
 
 
+
+
+
+x = 0
+y = 0
+endy= 0
+isjump = False
+
+def KeyPress(evt):
+#     print(evt)
+    global x,y
+    if evt.keysym=='Right':
+        x = 1
+    elif evt.keysym=='Left':
+        x = -1
+    
+def KeyRelease(evt):
+#     print(evt)
+    global x,y,isjump,endy
+    if evt.keysym=='Right':
+        x = 0
+    elif evt.keysym=='Left':
+        x = 0
+    elif evt.keysym=='space':
+        y = -10
+        endy = 10
+        isjump = True
+    #x = 0
+
+canvas.bind_all('<KeyPress>', KeyPress)
+canvas.bind_all('<KeyRelease>', KeyRelease)
+
+def loop2():
+    global y,isjump,p,index
+#     print('x')
+    # print(canvas.coords(obj))
+    canvas.move(obj_back,x,y)
+
+    
+    canvas.after(10, loop2)
+
+
 loop()
+loop2()
 tk.mainloop()
