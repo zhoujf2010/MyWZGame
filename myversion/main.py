@@ -3,6 +3,8 @@ import random
 import time
 import tkinter as tk
 from PIL import ImageTk, Image
+import os
+import math
 
 
 tk = Tk()
@@ -14,15 +16,21 @@ backimg = ImageTk.PhotoImage(Image.open("img/scene/map0.jpg"))
 obj_back = canvas.create_image(0,0,anchor=NW,image=backimg)  
 
 
-img1 = ImageTk.PhotoImage(Image.open("img/Sprite0/0-0-0.png"))
-img2 = PhotoImage(file = "img/Sprite0/0-0-1.png")
-img3 = PhotoImage(file = "img/Sprite0/0-0-2.png")
-img4 = PhotoImage(file = "img/Sprite0/0-0-3.png")
-imgs =[img1,img2,img3,img4]
-obj = canvas.create_image(200,370,anchor=NW,image=imgs[0])  
+manPos =[151,318]
 
+spriteImages = {}
+for file in os.listdir("./img/Sprite0"):
+    if file.endswith(".png"):
+        filename = file[:-4]
+        spriteImages[filename] = ImageTk.PhotoImage(
+            Image.open(os.path.join("./img/Sprite0", file)))
 
-p =0 
+obj = canvas.create_image(manPos[0], manPos[1], anchor=NW, image=spriteImages["0-0-0"])
+
+direct = 0  #0停止(0~3)  1行走(0~4)  2攻击(0~4)  3??(0~2)
+action = 0 
+
+p = 0
 
 def loop():
     global p
@@ -31,11 +39,85 @@ def loop():
     if p == 3:
         p = 0
 
-    canvas.itemconfig(obj, image=imgs[p])
-    
+    imgfile = "%s-%s-%s" % (action,direct,p)
+    canvas.itemconfig(obj, image=spriteImages[imgfile])
     canvas.after(250, loop)
 
 
+def getDir(current,target):
+    tan = (target[1] - current[1]) / (target[0] - current[0])
+
+    if abs(tan) >= math.tan(math.pi * 3 / 8) and target[1] <= current[1]:
+        return 0
+    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] > current[0] and target[1] < current[1]):
+        return 1
+    elif (abs(tan) <= math.tan(math.pi / 8) and target[0] >= current[0]):
+        return 2
+    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] > current[0] and target[1] > current[1]) :
+        return 3
+    elif (abs(tan) >= math.tan(math.pi * 3 / 8) and target[1] >= current[1]) :
+        return 4
+    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] < current[0] and target[1] > current[1]) :
+        return 5
+    elif (abs(tan) <= math.tan(math.pi / 8) and target[0] <= current[0]):
+        return 6
+    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] < current[0] and target[1] < current[1]) :
+        return 7
+    else:
+        return 0
+
+
+startrun = False
+
+def goto(target):
+    global startrun,manPos
+    if target[0] > manPos[0]:
+        dx = 5
+    elif target[0] < manPos[0]:
+        dx = -5
+    else:
+        dx = 0
+    if target[1] > manPos[1]:
+        dy = 5
+    elif target[0] < manPos[0]:
+        dy = -5
+    else:
+        dy = 0
+
+    x = manPos[0] + dx
+    y = manPos[1] + dy
+    
+    canvas.move(obj, dx,dy)
+    manPos[0] = x
+    manPos[1] = y
+    print("----",manPos)
+
+
+    if startrun:
+        canvas.after(120,goto,target)
+    #threading.Timer(0.1,myfunction).start()#第一个参数为执行间隔,单位秒
+
+
+
+
+def mouseDown(evt):
+    global p, direct,action,startrun
+    newPos = [evt.x,evt.y]
+    direct = getDir(manPos,newPos)
+    action = 1
+    print(1,evt)
+    startrun = True
+    goto(newPos)
+
+
+def mouseUp(evt):
+    global p, direct,action,startrun
+    action = 0
+    print(2,evt)
+    startrun = FALSE
+
+canvas.bind("<Button-1>", mouseDown)
+canvas.bind("<ButtonRelease-1>", mouseUp)
 
 
 
