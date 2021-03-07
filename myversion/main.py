@@ -23,23 +23,18 @@ obj = canvas.create_image(200,370,anchor=NW,image=imgs[0])
 
 
 p =0 
-index = 0
 
 def loop():
-    global p,index
+    global p
 
-    index = index + 1
-    if index == 15:
-        index = 0
-            
-    if index ==0 :
-        p = p+1
-        if p == 3:
-            p = 0
+    p = p+1
+    if p == 3:
+        p = 0
 
     canvas.itemconfig(obj, image=imgs[p])
     
-    canvas.after(10, loop)
+    canvas.after(250, loop)
+
 
 loop()
 tk.mainloop()
