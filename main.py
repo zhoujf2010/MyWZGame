@@ -9,18 +9,13 @@ import math
 
 tk = Tk()
 
-canvas = Canvas(tk, width=800,height=600)
+canvas = Canvas(tk, width=800, height=600)
 canvas.pack()
 
 backimg = ImageTk.PhotoImage(Image.open("img/scene/map0.jpg"))
-obj_back = canvas.create_image(0,0,anchor=NW,image=backimg)  
+obj_back = canvas.create_image(0, 0, anchor=NW, image=backimg)
 
-# tipC=Canvas(tk,width=32,height=32)
-# cursorimg = ImageTk.PhotoImage(Image.open("img/Cursor/0.png"))
-# obj_cursor = tipC.create_image(0,0,anchor=NW,image=cursorimg)  
-
-
-manPos =[151,318]
+manPos = [151, 318]
 
 spriteImages = {}
 for file in os.listdir("./img/Sprite0"):
@@ -29,12 +24,14 @@ for file in os.listdir("./img/Sprite0"):
         spriteImages[filename] = ImageTk.PhotoImage(
             Image.open(os.path.join("./img/Sprite0", file)))
 
-obj = canvas.create_image(manPos[0], manPos[1], anchor=NW, image=spriteImages["0-0-0"])
+obj = canvas.create_image(
+    manPos[0], manPos[1], anchor=NW, image=spriteImages["0-0-0"])
 
-direct = 0  #0停止(0~3)  1行走(0~4)  2攻击(0~4)  3??(0~2)
-action = 0 
+direct = 0  # 0停止(0~3)  1行走(0~4)  2攻击(0~4)  3??(0~2)
+action = 0
 
 p = 0
+
 
 def loop():
     global p
@@ -43,12 +40,12 @@ def loop():
     if p == 3:
         p = 0
 
-    imgfile = "%s-%s-%s" % (action,direct,p)
+    imgfile = "%s-%s-%s" % (action, direct, p)
     canvas.itemconfig(obj, image=spriteImages[imgfile])
     canvas.after(250, loop)
 
 
-def getDir(current,target):
+def getDir(current, target):
     tan = (target[1] - current[1]) / (target[0] - current[0])
 
     if abs(tan) >= math.tan(math.pi * 3 / 8) and target[1] <= current[1]:
@@ -57,31 +54,27 @@ def getDir(current,target):
         return 1
     elif (abs(tan) <= math.tan(math.pi / 8) and target[0] >= current[0]):
         return 2
-    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] > current[0] and target[1] > current[1]) :
+    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] > current[0] and target[1] > current[1]):
         return 3
-    elif (abs(tan) >= math.tan(math.pi * 3 / 8) and target[1] >= current[1]) :
+    elif (abs(tan) >= math.tan(math.pi * 3 / 8) and target[1] >= current[1]):
         return 4
-    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] < current[0] and target[1] > current[1]) :
+    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] < current[0] and target[1] > current[1]):
         return 5
     elif (abs(tan) <= math.tan(math.pi / 8) and target[0] <= current[0]):
         return 6
-    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] < current[0] and target[1] < current[1]) :
+    elif (abs(tan) > math.tan(math.pi / 8) and abs(tan) < math.tan(math.pi * 3 / 8) and target[0] < current[0] and target[1] < current[1]):
         return 7
     else:
         return 0
 
 
 startrun = False
-step = 0
+
 
 def goto(target):
-    global startrun,manPos,step,action
-    duration = math.sqrt(math.pow((manPos[0]-target[0]),2)+math.pow((manPos[1]-target[1]),2)) * 30
-    # if action == 1:
-    #     step =0
-    #     while action ==1:
-    #         time.sleep(0.0001)
-    #         pass
+    global startrun, manPos, action
+    duration = math.sqrt(
+        math.pow((manPos[0]-target[0]), 2)+math.pow((manPos[1]-target[1]), 2)) * 30
 
     step = int(duration / 120)
 
@@ -89,43 +82,46 @@ def goto(target):
     dy = (target[1]-manPos[1]) / step
 
     action = 1
-    goto2(dx,dy)
+    goto2(step, dx, dy)
 
-def goto2(dx,dy):
+
+def goto2(step, dx, dy):
     global action
-    if step ==0:
+    if step == 0:
         action = 0
-        return 
+        return
+    step = step - 1
 
     x = manPos[0] + dx
     y = manPos[1] + dy
-    
-    canvas.move(obj, dx,dy)
+
+    canvas.move(obj, dx, dy)
     manPos[0] = x
     manPos[1] = y
 
-    #if startrun:
-    canvas.after(120,goto2,dx,dy)
+    # if startrun:
+    canvas.after(120, goto2, step-1, dx, dy)
+
 
 def mouseDown(evt):
-    global p, direct,action,startrun
-    newPos = [evt.x,evt.y]
-    direct = getDir(manPos,newPos)
-    print(1,evt)
+    global p, direct, action, startrun
+    newPos = [evt.x, evt.y]
+    direct = getDir(manPos, newPos)
+    print(1, evt)
     startrun = True
     goto(newPos)
-    showClick(newPos,0,None)
+    showClick(newPos, 0, None)
 
 
 def mouseUp(evt):
-    global p, direct,action,startrun
+    global p, direct, action, startrun
     # action = 0
-    print(2,evt)
+    print(2, evt)
     startrun = FALSE
+
 
 canvas.bind("<Button-1>", mouseDown)
 canvas.bind("<ButtonRelease-1>", mouseUp)
-
 
 
 Animations = []
@@ -135,57 +131,56 @@ for file in os.listdir("./img/Animation/3/"):
             Image.open(os.path.join("./img/Animation/3/", file))))
 
 
-def showClick(pos,startAindex,obj):
+def showClick(pos, startAindex, obj):
     if startAindex >= len(Animations):
         canvas.delete(obj)
         return
     if obj is None:
-        obj = canvas.create_image(pos[0]-36,pos[1]-19,anchor=NW,image=Animations[startAindex])  
-    
+        obj = canvas.create_image(
+            pos[0]-36, pos[1]-19, anchor=NW, image=Animations[startAindex])
+
     canvas.itemconfig(obj, image=Animations[startAindex])
 
-    canvas.after(120,showClick,pos,startAindex+1,obj)
-
-
-
-
-
+    canvas.after(120, showClick, pos, startAindex+1, obj)
 
 
 x = 0
 y = 0
-endy= 0
+endy = 0
 isjump = False
 
+
 def KeyPress(evt):
-    global x,y
-    if evt.keysym=='Right':
+    global x, y
+    if evt.keysym == 'Right':
         x = 1
-    elif evt.keysym=='Left':
+    elif evt.keysym == 'Left':
         x = -1
-    elif evt.keysym=='Up':
+    elif evt.keysym == 'Up':
         y = -1
-    elif evt.keysym=='Down':
+    elif evt.keysym == 'Down':
         y = 1
-    
+
+
 def KeyRelease(evt):
-    global x,y
-    if evt.keysym=='Right':
+    global x, y
+    if evt.keysym == 'Right':
         x = 0
-    elif evt.keysym=='Left':
+    elif evt.keysym == 'Left':
         x = 0
-    elif evt.keysym=='Up':
+    elif evt.keysym == 'Up':
         y = 0
-    elif evt.keysym=='Down':
+    elif evt.keysym == 'Down':
         y = 0
+
 
 canvas.bind_all('<KeyPress>', KeyPress)
 canvas.bind_all('<KeyRelease>', KeyRelease)
 
-def loop2():
-    canvas.move(obj_back,x,y)
-    canvas.after(10, loop2)
 
+def loop2():
+    canvas.move(obj_back, x, y)
+    canvas.after(10, loop2)
 
 
 # def where(posn):                       #cursor tiop movement and colour change
@@ -194,7 +189,6 @@ def loop2():
 #     tipC.place(x=cx, y=cy)
 
 # canvas.bind("<Motion>",where)        #track mouse movement
-
 
 loop()
 loop2()
