@@ -15,6 +15,10 @@ canvas.pack()
 backimg = ImageTk.PhotoImage(Image.open("img/scene/map0.jpg"))
 obj_back = canvas.create_image(0,0,anchor=NW,image=backimg)  
 
+# tipC=Canvas(tk,width=32,height=32)
+# cursorimg = ImageTk.PhotoImage(Image.open("img/Cursor/0.png"))
+# obj_cursor = tipC.create_image(0,0,anchor=NW,image=cursorimg)  
+
 
 manPos =[151,318]
 
@@ -68,21 +72,30 @@ def getDir(current,target):
 
 
 startrun = False
+step = 0
 
 def goto(target):
-    global startrun,manPos
-    if target[0] > manPos[0]:
-        dx = 5
-    elif target[0] < manPos[0]:
-        dx = -5
-    else:
-        dx = 0
-    if target[1] > manPos[1]:
-        dy = 5
-    elif target[0] < manPos[0]:
-        dy = -5
-    else:
-        dy = 0
+    global startrun,manPos,step,action
+    duration = math.sqrt(math.pow((manPos[0]-target[0]),2)+math.pow((manPos[1]-target[1]),2)) * 30
+    # if action == 1:
+    #     step =0
+    #     while action ==1:
+    #         time.sleep(0.0001)
+    #         pass
+
+    step = int(duration / 120)
+
+    dx = (target[0]-manPos[0]) / step
+    dy = (target[1]-manPos[1]) / step
+
+    action = 1
+    goto2(dx,dy)
+
+def goto2(dx,dy):
+    global action
+    if step ==0:
+        action = 0
+        return 
 
     x = manPos[0] + dx
     y = manPos[1] + dy
@@ -90,34 +103,52 @@ def goto(target):
     canvas.move(obj, dx,dy)
     manPos[0] = x
     manPos[1] = y
-    print("----",manPos)
 
-
-    if startrun:
-        canvas.after(120,goto,target)
-    #threading.Timer(0.1,myfunction).start()#第一个参数为执行间隔,单位秒
-
-
-
+    #if startrun:
+    canvas.after(120,goto2,dx,dy)
 
 def mouseDown(evt):
     global p, direct,action,startrun
     newPos = [evt.x,evt.y]
     direct = getDir(manPos,newPos)
-    action = 1
     print(1,evt)
     startrun = True
     goto(newPos)
+    showClick(newPos,0,None)
 
 
 def mouseUp(evt):
     global p, direct,action,startrun
-    action = 0
+    # action = 0
     print(2,evt)
     startrun = FALSE
 
 canvas.bind("<Button-1>", mouseDown)
 canvas.bind("<ButtonRelease-1>", mouseUp)
+
+
+
+Animations = []
+for file in os.listdir("./img/Animation/3/"):
+    if file.endswith(".png"):
+        Animations.append(ImageTk.PhotoImage(
+            Image.open(os.path.join("./img/Animation/3/", file))))
+
+
+def showClick(pos,startAindex,obj):
+    if startAindex >= len(Animations):
+        canvas.delete(obj)
+        return
+    if obj is None:
+        obj = canvas.create_image(pos[0]-36,pos[1]-19,anchor=NW,image=Animations[startAindex])  
+    
+    canvas.itemconfig(obj, image=Animations[startAindex])
+
+    canvas.after(120,showClick,pos,startAindex+1,obj)
+
+
+
+
 
 
 
@@ -127,37 +158,42 @@ endy= 0
 isjump = False
 
 def KeyPress(evt):
-#     print(evt)
     global x,y
     if evt.keysym=='Right':
         x = 1
     elif evt.keysym=='Left':
         x = -1
+    elif evt.keysym=='Up':
+        y = -1
+    elif evt.keysym=='Down':
+        y = 1
     
 def KeyRelease(evt):
-#     print(evt)
-    global x,y,isjump,endy
+    global x,y
     if evt.keysym=='Right':
         x = 0
     elif evt.keysym=='Left':
         x = 0
-    elif evt.keysym=='space':
-        y = -10
-        endy = 10
-        isjump = True
-    #x = 0
+    elif evt.keysym=='Up':
+        y = 0
+    elif evt.keysym=='Down':
+        y = 0
 
 canvas.bind_all('<KeyPress>', KeyPress)
 canvas.bind_all('<KeyRelease>', KeyRelease)
 
 def loop2():
-    global y,isjump,p,index
-#     print('x')
-    # print(canvas.coords(obj))
     canvas.move(obj_back,x,y)
-
-    
     canvas.after(10, loop2)
+
+
+
+# def where(posn):                       #cursor tiop movement and colour change
+#     cx=tk.winfo_pointerx() - tk.winfo_rootx()
+#     cy=tk.winfo_pointery() - tk.winfo_rooty()
+#     tipC.place(x=cx, y=cy)
+
+# canvas.bind("<Motion>",where)        #track mouse movement
 
 
 loop()

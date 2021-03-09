@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+  <Animation Code="0" FullName="传送点" CenterX="66" CenterY="38" FrameTotal="7" Interval="160" Format="1" Kind="2">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+      <Frame ID="6" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+  <Animation Code="1" FullName="传送时效果" CenterX="70" CenterY="140" FrameTotal="6" Interval="100" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+  <Animation Code="2" FullName="死亡时蒸发效果"  CenterX="60" CenterY="180" FrameTotal="6" Interval="120" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+  <Animation Code="3" FullName="点击水滴" CenterX="36" CenterY="19" FrameTotal="8" Interval="120" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+      <Frame ID="6" OffsetX="0" OffsetY="0" />
+      <Frame ID="7" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+  <Animation Code="4" FullName="选中非敌对对象" CenterX="40" CenterY="20" FrameTotal="5" Interval="120" Format="1" Kind="2">
+    <Frames>
+      <Frame ID="0" OffsetX="10" OffsetY="21" />
+      <Frame ID="1" OffsetX="10" OffsetY="21" />
+      <Frame ID="2" OffsetX="10" OffsetY="21" />
+      <Frame ID="3" OffsetX="10" OffsetY="21" />
+      <Frame ID="4" OffsetX="10" OffsetY="21" />
+    </Frames>
+  </Animation>
+  <Animation Code="5" FullName="选中敌对对象" CenterX="38" CenterY="26" FrameTotal="6" Interval="120" Format="1" Kind="2">
+    <Frames>
+      <Frame ID="0" OffsetX="9" OffsetY="20" />
+      <Frame ID="1" OffsetX="9" OffsetY="20" />
+      <Frame ID="2" OffsetX="9" OffsetY="20" />
+      <Frame ID="3" OffsetX="9" OffsetY="20" />
+      <Frame ID="4" OffsetX="9" OffsetY="20" />
+      <Frame ID="5" OffsetX="9" OffsetY="20" />
+    </Frames>
+  </Animation>
+  <Animation Code="6" FullName="雷击" CenterX="35" CenterY="220" FrameTotal="5" Interval="90" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="21" OffsetY="2" />
+      <Frame ID="1" OffsetX="10" OffsetY="17" />
+      <Frame ID="2" OffsetX="-34" OffsetY="-3" />
+      <Frame ID="3" OffsetX="-80" OffsetY="30" />
+      <Frame ID="4" OffsetX="-75" OffsetY="66" />
+    </Frames>
+  </Animation>
+  <Animation Code="7" FullName="麻痹" CenterX="40" CenterY="70" FrameTotal="8" Interval="70" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+      <Frame ID="6" OffsetX="0" OffsetY="0" />
+      <Frame ID="7" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+  <Animation Code="8" FullName="风切" CenterX="40" CenterY="70" FrameTotal="7" Interval="70" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+      <Frame ID="6" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+  <Animation Code="9" FullName="爆炸" CenterX="44" CenterY="70" FrameTotal="7" Interval="130" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="37" OffsetY="33" />
+      <Frame ID="1" OffsetX="11" OffsetY="23" />
+      <Frame ID="2" OffsetX="4" OffsetY="16" />
+      <Frame ID="3" OffsetX="0" OffsetY="8" />
+      <Frame ID="4" OffsetX="0" OffsetY="5" />
+      <Frame ID="5" OffsetX="0" OffsetY="2" />
+      <Frame ID="6" OffsetX="14" OffsetY="2" />
+    </Frames>
+  </Animation>
+  <Animation Code="10" FullName="冰裂" CenterX="125" CenterY="170" FrameTotal="6" Interval="140" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="115" OffsetY="120" />
+      <Frame ID="1" OffsetX="47" OffsetY="68" />
+      <Frame ID="2" OffsetX="5" OffsetY="11" />
+      <Frame ID="3" OffsetX="0" OffsetY="10" />
+      <Frame ID="4" OffsetX="3" OffsetY="0" />
+      <Frame ID="5" OffsetX="19" OffsetY="7" />
+    </Frames>
+  </Animation>
+  <Animation Code="11" FullName="地爆" CenterX="170" CenterY="210" FrameTotal="9" Interval="150" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="37" OffsetY="51" />
+      <Frame ID="4" OffsetX="15" OffsetY="8" />
+      <Frame ID="5" OffsetX="7" OffsetY="25" />
+      <Frame ID="6" OffsetX="1" OffsetY="0" />
+      <Frame ID="7" OffsetX="1" OffsetY="121" />
+      <Frame ID="8" OffsetX="101" OffsetY="135" />
+    </Frames>
+  </Animation>
+  <Animation Code="12" FullName="爆裂" CenterX="75" CenterY="90" FrameTotal="6" Interval="140" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+  <Animation Code="13" FullName="圆月斩" CenterX="195" CenterY="158" FrameTotal="6" Interval="80" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0"/>
+      <Frame ID="1" OffsetX="0" OffsetY="0"/>
+      <Frame ID="2" OffsetX="0" OffsetY="0"/>
+      <Frame ID="3" OffsetX="0" OffsetY="0"/>
+      <Frame ID="4" OffsetX="0" OffsetY="0"/>
+      <Frame ID="5" OffsetX="0" OffsetY="0"/>
+    </Frames>
+    <Levels>
+      <Level ID="1" DamageMin="560" DamageMax="860" Radius="5" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="2" DamageMin="730" DamageMax="970" Radius="5" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="3" DamageMin="950" DamageMax="1430" Radius="6" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="4" DamageMin="1220" DamageMax="1950" Radius="6" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="5" DamageMin="1560" DamageMax="2300" Radius="7" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="6" DamageMin="1900" DamageMax="2940" Radius="7" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="7" DamageMin="2510" DamageMax="3600" Radius="8" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="8" DamageMin="3230" DamageMax="4780" Radius="8" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+      <Level ID="9" DamageMin="4560" DamageMax="6600" Radius="9" SpecialEffect="8" AdditionalEffect="1" MagicType="0" Number="1"/>
+    </Levels>
+  </Animation>
+  <Animation Code="14" FullName="疾风斩" CenterX="138" CenterY="198" FrameTotal="5" Interval="120" Format="1" Kind="2">
+    <Frames>
+      <Frame ID="0" OffsetX="11" OffsetY="0"/>
+      <Frame ID="1" OffsetX="0" OffsetY="8"/>
+      <Frame ID="2" OffsetX="6" OffsetY="9"/>
+      <Frame ID="3" OffsetX="21" OffsetY="8"/>
+      <Frame ID="4" OffsetX="12" OffsetY="7"/>
+    </Frames>
+    <Levels>
+      <Level ID="1" DamageMin="360" DamageMax="440" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="1"/>
+      <Level ID="2" DamageMin="430" DamageMax="600" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="1"/>
+      <Level ID="3" DamageMin="650" DamageMax="830" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="3"/>
+      <Level ID="4" DamageMin="920" DamageMax="1250" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="3"/>
+      <Level ID="5" DamageMin="1360" DamageMax="1500" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="3"/>
+      <Level ID="6" DamageMin="1600" DamageMax="1840" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="3"/>
+      <Level ID="7" DamageMin="2010" DamageMax="2400" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="5"/>
+      <Level ID="8" DamageMin="2500" DamageMax="3000" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="5"/>
+      <Level ID="9" DamageMin="3360" DamageMax="5000" Radius="800" SpecialEffect="7" AdditionalEffect="0" MagicType="1" Number="5"/>
+    </Levels>
+  </Animation>
+  <Animation Code="15" FullName="十字斩" CenterX="57" CenterY="105" FrameTotal="7" Interval="100" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="79" OffsetY="44"/>
+      <Frame ID="1" OffsetX="46" OffsetY="36"/>
+      <Frame ID="2" OffsetX="67" OffsetY="8"/>
+      <Frame ID="3" OffsetX="20" OffsetY="1"/>
+      <Frame ID="4" OffsetX="1" OffsetY="0"/>
+      <Frame ID="5" OffsetX="0" OffsetY="8"/>
+      <Frame ID="6" OffsetX="1" OffsetY="0"/>
+    </Frames>
+    <Levels>
+      <Level ID="1" DamageMin="360" DamageMax="440" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="1"/>
+      <Level ID="2" DamageMin="430" DamageMax="600" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="2"/>
+      <Level ID="3" DamageMin="650" DamageMax="830" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="3"/>
+      <Level ID="4" DamageMin="920" DamageMax="1250" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="4"/>
+      <Level ID="5" DamageMin="1360" DamageMax="1500" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="5"/>
+      <Level ID="6" DamageMin="1600" DamageMax="1840" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="6"/>
+      <Level ID="7" DamageMin="2010" DamageMax="2400" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="7"/>
+      <Level ID="8" DamageMin="2500" DamageMax="3000" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="8"/>
+      <Level ID="9" DamageMin="3360" DamageMax="5000" Radius="8" SpecialEffect="9" AdditionalEffect="0" MagicType="2" Number="9"/>
+    </Levels>
+  </Animation>
+  <Animation Code="16" FullName="环冰斩" CenterX="120" CenterY="135" FrameTotal="7" Interval="80" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="100" OffsetY="114"/>
+      <Frame ID="1" OffsetX="72" OffsetY="96"/>
+      <Frame ID="2" OffsetX="44" OffsetY="28"/>
+      <Frame ID="3" OffsetX="21" OffsetY="8"/>
+      <Frame ID="4" OffsetX="5" OffsetY="13"/>
+      <Frame ID="5" OffsetX="5" OffsetY="43"/>
+      <Frame ID="6" OffsetX="16" OffsetY="67"/>
+    </Frames>
+    <Levels>
+      <Level ID="1" DamageMin="360" DamageMax="440" Radius="6" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="1"/>
+      <Level ID="2" DamageMin="430" DamageMax="600" Radius="9" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="2"/>
+      <Level ID="3" DamageMin="650" DamageMax="830" Radius="12" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="3"/>
+      <Level ID="4" DamageMin="920" DamageMax="1250" Radius="15" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="4"/>
+      <Level ID="5" DamageMin="1360" DamageMax="1500" Radius="15" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="4"/>
+      <Level ID="6" DamageMin="1600" DamageMax="1840" Radius="18" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="5"/>
+      <Level ID="7" DamageMin="2010" DamageMax="2400" Radius="18" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="5"/>
+      <Level ID="8" DamageMin="2500" DamageMax="3000" Radius="22" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="6"/>
+      <Level ID="9" DamageMin="3360" DamageMax="5000" Radius="22" SpecialEffect="10" AdditionalEffect="0" MagicType="3" Number="6"/>
+    </Levels>
+  </Animation>
+  <Animation Code="17" FullName="落焰斩" CenterX="255" CenterY="415" FrameTotal="7" Interval="150" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0"/>
+      <Frame ID="1" OffsetX="0" OffsetY="0"/>
+      <Frame ID="2" OffsetX="0" OffsetY="0"/>
+      <Frame ID="3" OffsetX="0" OffsetY="0"/>
+      <Frame ID="4" OffsetX="0" OffsetY="0"/>
+      <Frame ID="5" OffsetX="0" OffsetY="0"/>
+      <Frame ID="6" OffsetX="0" OffsetY="0"/>
+    </Frames>
+    <Levels>
+      <Level ID="1" DamageMin="160" DamageMax="240" Radius="4" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="2"/>
+      <Level ID="2" DamageMin="300" DamageMax="400" Radius="4" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="2"/>
+      <Level ID="3" DamageMin="400" DamageMax="500" Radius="5" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="2"/>
+      <Level ID="4" DamageMin="500" DamageMax="600" Radius="5" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="3"/>
+      <Level ID="5" DamageMin="660" DamageMax="750" Radius="6" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="3"/>
+      <Level ID="6" DamageMin="800" DamageMax="900" Radius="6" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="3"/>
+      <Level ID="7" DamageMin="950" DamageMax="1000" Radius="7" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="3"/>
+      <Level ID="8" DamageMin="1100" DamageMax="1200" Radius="7" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="3"/>
+      <Level ID="9" DamageMin="1260" DamageMax="1500" Radius="7" SpecialEffect="12" AdditionalEffect="0" MagicType="4" Number="4"/>
+    </Levels>
+  </Animation>
+  <Animation Code="18" FullName="碧月斩" CenterX="50" CenterY="75" FrameTotal="1" Interval="100" Format="1" Kind="2">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0"/>
+    </Frames>
+    <Levels>
+      <Level ID="1" DamageMin="160" DamageMax="240" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="1"/>
+      <Level ID="2" DamageMin="300" DamageMax="400" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="2"/>
+      <Level ID="3" DamageMin="400" DamageMax="500" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="3"/>
+      <Level ID="4" DamageMin="500" DamageMax="600" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="4"/>
+      <Level ID="5" DamageMin="660" DamageMax="750" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="4"/>
+      <Level ID="6" DamageMin="800" DamageMax="900" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="4"/>
+      <Level ID="7" DamageMin="950" DamageMax="1000" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="5"/>
+      <Level ID="8" DamageMin="1100" DamageMax="1200" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="5"/>
+      <Level ID="9" DamageMin="1260" DamageMax="1500" Radius="800" SpecialEffect="7" AdditionalEffect="1" MagicType="5" Number="6"/>
+    </Levels>
+  </Animation>
+  <Animation Code="19" FullName="地裂斩" CenterX="105" CenterY="110" FrameTotal="7" Interval="100" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0"/>
+      <Frame ID="1" OffsetX="0" OffsetY="0"/>
+      <Frame ID="2" OffsetX="0" OffsetY="0"/>
+      <Frame ID="3" OffsetX="0" OffsetY="0"/>
+      <Frame ID="4" OffsetX="0" OffsetY="0"/>
+      <Frame ID="5" OffsetX="0" OffsetY="0"/>
+      <Frame ID="6" OffsetX="0" OffsetY="0"/>
+    </Frames>
+    <Levels>
+      <Level ID="1" DamageMin="160" DamageMax="240" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="4"/>
+      <Level ID="2" DamageMin="300" DamageMax="400" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="5"/>
+      <Level ID="3" DamageMin="400" DamageMax="500" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="5"/>
+      <Level ID="4" DamageMin="500" DamageMax="600" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="6"/>
+      <Level ID="5" DamageMin="660" DamageMax="750" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="6"/>
+      <Level ID="6" DamageMin="800" DamageMax="900" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="6"/>
+      <Level ID="7" DamageMin="950" DamageMax="1000" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="7"/>
+      <Level ID="8" DamageMin="1100" DamageMax="1200" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="7"/>
+      <Level ID="9" DamageMin="1260" DamageMax="1500" Radius="3" SpecialEffect="20" AdditionalEffect="2" MagicType="6" Number="8"/>
+    </Levels>
+  </Animation>
+  <Animation Code="20" FullName="爆炸1" CenterX="95" CenterY="110" FrameTotal="6" Interval="100" Format="1" Kind="1">
+    <Frames>
+      <Frame ID="0" OffsetX="0" OffsetY="0" />
+      <Frame ID="1" OffsetX="0" OffsetY="0" />
+      <Frame ID="2" OffsetX="0" OffsetY="0" />
+      <Frame ID="3" OffsetX="0" OffsetY="0" />
+      <Frame ID="4" OffsetX="0" OffsetY="0" />
+      <Frame ID="5" OffsetX="0" OffsetY="0" />
+    </Frames>
+  </Animation>
+</Animations>
