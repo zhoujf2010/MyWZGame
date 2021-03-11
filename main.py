@@ -14,7 +14,7 @@ tk = Tk()
 canvas = Canvas(tk, width=800, height=600)
 canvas.pack()
 scene = Scene(canvas,"map0")
-sprite = Sprite(canvas,"Sprite0")
+sprite = Sprite(tk,canvas,"Sprite0")
 
 
 def mouseDown(evt):

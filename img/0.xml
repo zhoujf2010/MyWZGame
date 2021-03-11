@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sprite
+  FullName="六 尾"
+  ATK="180"
+  DEF="60"
+  MAG="120"
+  DEX="30"
+  Speed="250"
+  AttackType="0"
+  GuardDistance="7"
+  SightDistance="15"
+  AttackDistance="2"
+  CastingDistance="20"
+  RealWidth="224"
+  LifeWidthMax="50"
+  LifeCenterY="15"
+  CenterX="102"
+  CenterY="110"
+  ModelCode="0"
+  StandTotalFrame="3"
+  StandEffectFrame="-1"
+  StandInterval="300"
+  RunTotalFrame="4"
+  RunEffectFrame="-1"
+  RunInterval="120"
+  AttackTotalFrame="4"
+  AttackEffectFrame="2"
+  AttackInterval="150"
+  InjureTotalFrame="2"
+  InjureEffectFrame="2"
+  InjureInterval="130"
+  CastingTotalFrame="4"
+  CastingEffectFrame="4"
+  CastingInterval="150"
+  StateTotal="4"
+  DirectionTotal="8"
+  >
+  <Frames>
+    <Frame ID="0-0-0" OffsetX="54" OffsetY="41" />
+    <Frame ID="0-0-1" OffsetX="55" OffsetY="41" />
+    <Frame ID="0-0-2" OffsetX="55" OffsetY="41" />
+    <Frame ID="0-0-3" OffsetX="55" OffsetY="41" />
+    <Frame ID="0-1-0" OffsetX="51" OffsetY="40" />
+    <Frame ID="0-1-1" OffsetX="51" OffsetY="40" />
+    <Frame ID="0-1-2" OffsetX="52" OffsetY="40" />
+    <Frame ID="0-1-3" OffsetX="51" OffsetY="40" />
+    <Frame ID="0-2-0" OffsetX="57" OffsetY="39" />
+    <Frame ID="0-2-1" OffsetX="57" OffsetY="39" />
+    <Frame ID="0-2-2" OffsetX="57" OffsetY="40" />
+    <Frame ID="0-2-3" OffsetX="57" OffsetY="40" />
+    <Frame ID="0-3-0" OffsetX="85" OffsetY="39" />
+    <Frame ID="0-3-1" OffsetX="85" OffsetY="39" />
+    <Frame ID="0-3-2" OffsetX="85" OffsetY="39" />
+    <Frame ID="0-3-3" OffsetX="85" OffsetY="40" />
+    <Frame ID="0-4-0" OffsetX="89" OffsetY="40" />
+    <Frame ID="0-4-1" OffsetX="89" OffsetY="40" />
+    <Frame ID="0-4-2" OffsetX="89" OffsetY="40" />
+    <Frame ID="0-4-3" OffsetX="88" OffsetY="40" />
+    <Frame ID="0-5-0" OffsetX="86" OffsetY="41" />
+    <Frame ID="0-5-1" OffsetX="86" OffsetY="41" />
+    <Frame ID="0-5-2" OffsetX="86" OffsetY="41" />
+    <Frame ID="0-5-3" OffsetX="86" OffsetY="41" />
+    <Frame ID="0-6-0" OffsetX="86" OffsetY="42" />
+    <Frame ID="0-6-1" OffsetX="86" OffsetY="42" />
+    <Frame ID="0-6-2" OffsetX="85" OffsetY="42" />
+    <Frame ID="0-6-3" OffsetX="86" OffsetY="42" />
+    <Frame ID="0-7-0" OffsetX="85" OffsetY="42" />
+    <Frame ID="0-7-1" OffsetX="85" OffsetY="42" />
+    <Frame ID="0-7-2" OffsetX="85" OffsetY="42" />
+    <Frame ID="0-7-3" OffsetX="85" OffsetY="42" />
+    <Frame ID="1-0-0" OffsetX="85" OffsetY="39" />
+    <Frame ID="1-0-1" OffsetX="88" OffsetY="37" />
+    <Frame ID="1-0-2" OffsetX="88" OffsetY="39" />
+    <Frame ID="1-0-3" OffsetX="87" OffsetY="38" />
+    <Frame ID="1-0-4" OffsetX="86" OffsetY="37" />
+    <Frame ID="1-1-0" OffsetX="59" OffsetY="39" />
+    <Frame ID="1-1-1" OffsetX="60" OffsetY="37" />
+    <Frame ID="1-1-2" OffsetX="60" OffsetY="39" />
+    <Frame ID="1-1-3" OffsetX="60" OffsetY="38" />
+    <Frame ID="1-1-4" OffsetX="60" OffsetY="37" />
+    <Frame ID="1-2-0" OffsetX="57" OffsetY="40" />
+    <Frame ID="1-2-1" OffsetX="60" OffsetY="38" />
+    <Frame ID="1-2-2" OffsetX="57" OffsetY="40" />
+    <Frame ID="1-2-3" OffsetX="58" OffsetY="40" />
+    <Frame ID="1-2-4" OffsetX="58" OffsetY="39" />
+    <Frame ID="1-3-0" OffsetX="68" OffsetY="41" />
+    <Frame ID="1-3-1" OffsetX="68" OffsetY="39" />
+    <Frame ID="1-3-2" OffsetX="67" OffsetY="40" />
+    <Frame ID="1-3-3" OffsetX="68" OffsetY="40" />
+    <Frame ID="1-3-4" OffsetX="68" OffsetY="39" />
+    <Frame ID="1-4-0" OffsetX="88" OffsetY="41" />
+    <Frame ID="1-4-1" OffsetX="86" OffsetY="40" />
+    <Frame ID="1-4-2" OffsetX="85" OffsetY="41" />
+    <Frame ID="1-4-3" OffsetX="86" OffsetY="41" />
+    <Frame ID="1-4-4" OffsetX="89" OffsetY="40" />
+    <Frame ID="1-5-0" OffsetX="85" OffsetY="41" />
+    <Frame ID="1-5-1" OffsetX="84" OffsetY="39" />
+    <Frame ID="1-5-2" OffsetX="84" OffsetY="40" />
+    <Frame ID="1-5-3" OffsetX="84" OffsetY="40" />
+    <Frame ID="1-5-4" OffsetX="84" OffsetY="39" />
+    <Frame ID="1-6-0" OffsetX="81" OffsetY="40" />
+    <Frame ID="1-6-1" OffsetX="80" OffsetY="38" />
+    <Frame ID="1-6-2" OffsetX="81" OffsetY="40" />
+    <Frame ID="1-6-3" OffsetX="80" OffsetY="39" />
+    <Frame ID="1-6-4" OffsetX="80" OffsetY="38" />
+    <Frame ID="1-7-0" OffsetX="82" OffsetY="39" />
+    <Frame ID="1-7-1" OffsetX="82" OffsetY="37" />
+    <Frame ID="1-7-2" OffsetX="82" OffsetY="39" />
+    <Frame ID="1-7-3" OffsetX="82" OffsetY="38" />
+    <Frame ID="1-7-4" OffsetX="82" OffsetY="37" />
+    <Frame ID="2-0-0" OffsetX="54" OffsetY="48" />
+    <Frame ID="2-0-1" OffsetX="87" OffsetY="51" />
+    <Frame ID="2-0-2" OffsetX="55" OffsetY="42" />
+    <Frame ID="2-0-3" OffsetX="56" OffsetY="50" />
+    <Frame ID="2-0-4" OffsetX="54" OffsetY="34" />
+    <Frame ID="2-1-0" OffsetX="51" OffsetY="49" />
+    <Frame ID="2-1-1" OffsetX="64" OffsetY="52" />
+    <Frame ID="2-1-2" OffsetX="57" OffsetY="44" />
+    <Frame ID="2-1-3" OffsetX="50" OffsetY="49" />
+    <Frame ID="2-1-4" OffsetX="51" OffsetY="50" />
+    <Frame ID="2-2-0" OffsetX="57" OffsetY="52" />
+    <Frame ID="2-2-1" OffsetX="53" OffsetY="56" />
+    <Frame ID="2-2-2" OffsetX="71" OffsetY="53" />
+    <Frame ID="2-2-3" OffsetX="0" OffsetY="50" />
+    <Frame ID="2-2-4" OffsetX="54" OffsetY="51" />
+    <Frame ID="2-3-0" OffsetX="85" OffsetY="54" />
+    <Frame ID="2-3-1" OffsetX="53" OffsetY="60" />
+    <Frame ID="2-3-2" OffsetX="85" OffsetY="62" />
+    <Frame ID="2-3-3" OffsetX="6" OffsetY="48" />
+    <Frame ID="2-3-4" OffsetX="70" OffsetY="45" />
+    <Frame ID="2-4-0" OffsetX="87" OffsetY="54" />
+    <Frame ID="2-4-1" OffsetX="72" OffsetY="63" />
+    <Frame ID="2-4-2" OffsetX="84" OffsetY="67" />
+    <Frame ID="2-4-3" OffsetX="70" OffsetY="20" />
+    <Frame ID="2-4-4" OffsetX="68" OffsetY="32" />
+    <Frame ID="2-5-0" OffsetX="86" OffsetY="53" />
+    <Frame ID="2-5-1" OffsetX="81" OffsetY="63" />
+    <Frame ID="2-5-2" OffsetX="57" OffsetY="65" />
+    <Frame ID="2-5-3" OffsetX="79" OffsetY="22" />
+    <Frame ID="2-5-4" OffsetX="43" OffsetY="26" />
+    <Frame ID="2-6-0" OffsetX="71" OffsetY="50" />
+    <Frame ID="2-6-1" OffsetX="71" OffsetY="59" />
+    <Frame ID="2-6-2" OffsetX="41" OffsetY="57" />
+    <Frame ID="2-6-3" OffsetX="71" OffsetY="53" />
+    <Frame ID="2-6-4" OffsetX="55" OffsetY="30" />
+    <Frame ID="2-7-0" OffsetX="71" OffsetY="49" />
+    <Frame ID="2-7-1" OffsetX="71" OffsetY="54" />
+    <Frame ID="2-7-2" OffsetX="24" OffsetY="47" />
+    <Frame ID="2-7-3" OffsetX="71" OffsetY="51" />
+    <Frame ID="2-7-4" OffsetX="71" OffsetY="27" />
+    <Frame ID="3-0-0" OffsetX="54" OffsetY="48" />
+    <Frame ID="3-0-1" OffsetX="54" OffsetY="49" />
+    <Frame ID="3-0-2" OffsetX="54" OffsetY="48" />
+    <Frame ID="3-1-0" OffsetX="54" OffsetY="49" />
+    <Frame ID="3-1-1" OffsetX="54" OffsetY="48" />
+    <Frame ID="3-1-2" OffsetX="52" OffsetY="48" />
+    <Frame ID="3-2-0" OffsetX="60" OffsetY="48" />
+    <Frame ID="3-2-1" OffsetX="61" OffsetY="49" />
+    <Frame ID="3-2-2" OffsetX="58" OffsetY="51" />
+    <Frame ID="3-3-0" OffsetX="87" OffsetY="47" />
+    <Frame ID="3-3-1" OffsetX="87" OffsetY="50" />
+    <Frame ID="3-3-2" OffsetX="86" OffsetY="52" />
+    <Frame ID="3-4-0" OffsetX="87" OffsetY="51" />
+    <Frame ID="3-4-1" OffsetX="88" OffsetY="46" />
+    <Frame ID="3-4-2" OffsetX="88" OffsetY="51" />
+    <Frame ID="3-5-0" OffsetX="86" OffsetY="52" />
+    <Frame ID="3-5-1" OffsetX="84" OffsetY="47" />
+    <Frame ID="3-5-2" OffsetX="82" OffsetY="50" />
+    <Frame ID="3-6-0" OffsetX="71" OffsetY="50" />
+    <Frame ID="3-6-1" OffsetX="71" OffsetY="47" />
+    <Frame ID="3-6-2" OffsetX="71" OffsetY="48" />
+    <Frame ID="3-7-0" OffsetX="71" OffsetY="49" />
+    <Frame ID="3-7-1" OffsetX="71" OffsetY="48" />
+    <Frame ID="3-7-2" OffsetX="71" OffsetY="48" />
+  </Frames>
+</Sprite>
