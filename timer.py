@@ -6,9 +6,10 @@ class Timer:
         self.Interval = Interval
         self.isRun = False
 
-    def start(self):
+    def start(self,param =None):
         self.isRun = True
-        self.Doloop()
+        self.param = param
+        self.Doloop(param)
 
     def stop(self):
         self.isRun = False
@@ -16,7 +17,10 @@ class Timer:
     def setInterval(self, Interval):
         self.Interval = Interval
 
-    def Doloop(self):
-        self.callback()
+    def Doloop(self,param):
+        if param is None:
+            self.callback()
+        else:
+            self.callback(param)
         if self.isRun:
-            self.canvas.after(self.Interval, self.Doloop)
+            self.canvas.after(self.Interval, self.Doloop,param)

@@ -9,12 +9,14 @@ from sprite import Sprite
 from animation import Animation
 from scene import Scene
 
+#https://www.cnblogs.com/alamiye010/tag/Silverlight%20MMORPG%E7%BD%91%E7%BB%9C%E6%B8%B8%E6%88%8F%E8%AF%BE%E7%A8%8B/
+
 tk = Tk()
 
 canvas = Canvas(tk, width=800, height=600)
 canvas.pack()
 scene = Scene(canvas,"map0")
-sprite = Sprite(tk,canvas,"Sprite0")
+sprite = Sprite(tk,canvas,"Sprite1")
 
 
 def mouseDown(evt):
