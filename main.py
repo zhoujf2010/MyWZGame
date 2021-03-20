@@ -67,7 +67,7 @@ canvas.bind_all('<KeyRelease>', KeyRelease)
 
 
 mysocket = mySocket(receiveMsg)
-mysocket.connect("127.0.0.1",82)
+mysocket.connect("192.168.3.30",82)
 time.sleep(1)
 sendginal(100,210)
 # mysocket.sendMsg("我上线了")
